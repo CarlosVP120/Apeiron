@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixology - Building Digital Product</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Apeiron</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Apeiron</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item a">
+              <a href="#home" class="navbar-link" data-nav-link
+                ><span>Home</span></a
+              >
+            </li>
+
+            <li class="navbar-item a">
+              <a href="#service" class="navbar-link" data-nav-link
+                ><span>Services</span></a
+              >
+            </li>
+
+            <li class="navbar-item a">
+              <a href="#feature" class="navbar-link" data-nav-link
+                ><span>Features</span></a
+              >
+            </li>
+
+            <li class="navbar-item a">
+              <a href="#project" class="navbar-link" data-nav-link
+                ><span>Portfolio</span></a
+              >
+            </li>
+
+            <li class="navbar-item a">
+              <a href="#pricing" class="navbar-link" data-nav-link
+                ><span>Pricing</span></a
+              >
+            </li>
+
+            <li class="navbar-item a">
+              <a href="#newsletter" class="navbar-link" data-nav-link
+                ><span>Contact</span></a
+              >
+            </li>
+
+            <div class="cursor"></div>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#newsletter" class="btn btn-primary has-before has-after"
+          >Let’s Talk 👋</a
+        >
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Transforming visions into
+                <span class="has-before">stunning</span> digital experiences.
+              </h1>
+
+              <p class="hero-text">
+                At Apeiron we specialize in designing, building, scaling and
+                deploying beautiful, usable websites with blazing-fast
+                efficiency.
+              </p>
+
+              <div class="wrapper">
+                <a href="#service" class="btn btn-primary has-before has-after"
+                  >Explore Services</a
+                >
+
+                <a href="#newsletter">
+                  <button class="btn hero-btn" aria-label="pixology promo">
+                    <ion-icon
+                      name="videocam-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">Schedule a meeting</span>
+                  </button>
+                </a>
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(241, 77%, 63%)"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+
+                    <span class="span">Facebook</span>
+                  </a>
+                </li>
+
+                <!-- <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(0, 100%, 50%)"
+                  >
+                    <ion-icon name="logo-youtube"></ion-icon>
+
+                    <span class="span">Youtube</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(203, 89%, 53%)"
+                  >
+                    <ion-icon name="logo-twitter"></ion-icon>
+
+                    <span class="span">Twitter</span>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Our Services</p>
+
+            <h2 class="h2 section-title text-center">
+              Manage you business with our
+              <span class="has-before">best service</span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-2.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <h1 class="card-title">Web & Mobile Development</h1>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/previews/015/153/145/original/computer-social-media-content-3d-icon-design-png.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <h1 class="card-title">Web Design</h1>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 343, 98%, 60%">
+                  <div class="card-icon">
+                    <img
+                      src="https://play-lh.googleusercontent.com/1h-6gBZQKlbCr4SzMa2ka86QouvepbUyC69piDQXnStoG6QY3_9LXmQVcDOoCy3aFdNQ"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <h1 class="card-title">Full Stack Apps</h1>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 210, 100%, 53%">
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn3d.iconscout.com/3d/premium/thumb/software-testing-5374061-4496030.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <h1 class="card-title">Software</h1>
+                  </h3>
+                </div>
+              </li>
+
+              <!--<li>
+                <div class="service-card" style="--color: 157, 89%, 44%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-6.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Meketing and Communication</a
+                    >
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 52, 98%, 50%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-7.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Business Development</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <a href="#" class="link-card" style="--color: 203, 97%, 75%">
+                  <span class="span">04 More Service</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" id="feature" aria-label="feature">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="./assets/images/feature-banner.png"
+                width="582"
+                height="585"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="feature-content">
+              <p class="section-subtitle has-before">Why Choose us</p>
+
+              <h2 class="h2 section-title">
+                We are ready to take any
+                <span class="has-before">challenge</span>
+              </h2>
+
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 174, 77%, 50%">
+                      <ion-icon
+                        name="rocket-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Fast working process</h3>
+
+                      <p class="card-text">
+                        At Apeiron we like to keep things simple and fast. We
+                        believe in giving our clients the best.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 241, 77%, 63%">
+                      <ion-icon
+                        name="people-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Dedicated team</h3>
+
+                      <p class="card-text">
+                        Our expert team of developers and designers are always
+                        ready to take on any challenge.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 343, 98%, 60%">
+                      <ion-icon
+                        name="headset-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">24/7 hours support</h3>
+
+                      <p class="card-text">
+                        We are always available for our clients, no matter what
+                        time it is. We are always there for you.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section class="section project" id="project" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Projects</p>
+
+            <h2 class="h2 section-title text-center">
+              Apeiron complete <span class="has-before">projects</span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card">
+                  <a
+                    href="https://carlos-veryan.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429"
+                    >
+                      <img
+                        src="./assets/images/portfoliopc.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <div class="card-title">Personal Portfolio</div>
+                      </h3>
+
+                      <div class="card-tag">Web Design/Development</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <a
+                    href="https://sol-funding.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429"
+                    >
+                      <img
+                        src="./assets/images/solfundpc.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <div class="card-title">SolFund</div>
+                      </h3>
+
+                      <div class="card-tag">
+                        Blockchain Web Design/Development
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <a
+                    href="https://inlook.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429"
+                    >
+                      <img
+                        src="./assets/images/inlookloginpc.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <div class="card-title">InLook</div>
+                      </h3>
+
+                      <div class="card-tag">Web Design/Development</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 835; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/apeironwebdevpc.png"
+                      width="835"
+                      height="429"
+                      loading="lazy"
+                      alt="Book art design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Apeiron WebDev</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Web Design/Development</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <a
+                    href="https://car-selling-website-tau.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429"
+                    >
+                      <img
+                        src="./assets/images/carpc.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <div class="card-title">Car Selling</div>
+                      </h3>
+
+                      <div class="card-tag">Web Design/Development</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <a
+                    href="https://www.apeiron-ai.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429"
+                    >
+                      <img
+                        src="./assets/images/apeironaipc.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <div class="card-title">ApeironAI</div>
+                      </h3>
+
+                      <div class="card-tag">Web Design/Development</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PRICING
+      -->
+
+        <section class="section service" id="pricing" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Pricing</p>
+
+            <h2 class="h2 section-title text-center">
+              Ready to get started?
+              <span class="has-before">Choose a plan</span>
+            </h2>
+
+            <ul class="grid-list2">
+              <li>
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <h3 class="h3">
+                    <h1 class="card-title2">Basic</h1>
+                  </h3>
+                  <h2 class="subtitle">Website</h2>
+                  <h1 class="pricetag">250 USD</h1>
+
+                  <ul class="list">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> Free
+                      Domain
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> 5
+                      Pages
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Completely Responsive
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> 6
+                      Month Support
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Custom Design
+                    </li>
+
+                    <li>
+                      <ion-icon name="close-outline"></ion-icon> Admin Panel
+                    </li>
+                  </ul>
+
+                  <div class="pricing-btn">
+                    <a
+                      href="#newsletter"
+                      class="btn btn-primary has-before has-after pricing-clickable-button"
+                      >Let’s Talk!</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <h3 class="h3">
+                    <h1 class="card-title2">Standard</h1>
+                  </h3>
+                  <h2 class="subtitle">Website</h2>
+                  <h1 class="pricetag">400 USD</h1>
+
+                  <ul class="list">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> Free
+                      Domain
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> 10
+                      Pages
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Completely Responsive
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> 1
+                      Year Support
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Custom Design
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Admin Panel
+                    </li>
+                  </ul>
+                  <div class="pricing-btn">
+                    <a
+                      href="#newsletter"
+                      class="btn btn-primary has-before has-after pricing-clickable-button"
+                      >Let’s Talk!</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 343, 98%, 60%">
+                  <h3 class="h3">
+                    <h1 class="card-title2">Corporate</h1>
+                  </h3>
+                  <h2 class="subtitle">Website</h2>
+                  <h1 class="pricetag">600 USD</h1>
+
+                  <ul class="list">
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> Free
+                      Domain
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> 15+
+                      Pages
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Completely Responsive
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon> 2
+                      Year Support
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Custom Design
+                    </li>
+
+                    <li>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Admin Panel
+                    </li>
+                  </ul>
+                  <div class="pricing-btn">
+                    <a
+                      href="#newsletter"
+                      class="btn btn-primary has-before has-after pricing-clickable-button"
+                      >Let’s Talk!</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section
+          class="section newsletter has-bg-image"
+          aria-label="newsletter"
+          id="newsletter"
+          style="background-image: url('./assets/images/newsletter-bg.jpg')"
+        >
+          <div class="container">
+            <!-- <figure class="newsletter-banner">
+              <img
+                src="./assets/images/newsletter-banner.png"
+                width="355"
+                height="356"
+                loading="lazy"
+                alt="newsletter banner"
+                class="w-100"
+              />
+            </figure> -->
+
+            <div class="newsletter-content">
+              <h2 class="h2 section-title">Schedule a meeting with us!</h2>
+              <iframe
+                src="https://koalendar.com/e/meet-with-carlos-veryan?embed=true"
+                width="100%"
+                height="800px"
+                frameborder="0"
+              ></iframe>
+            </div>
+
+            <form
+              action="https://formsubmit.co/05a94c5137ee4543b173364f6bc0d6b0"
+              method="POST"
+              class="newsletter-form"
+            >
+              <h2 class="h2 section-title">Send us a message!</h2>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                class="email-field"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="email-field"
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                class="email-field"
+              />
+
+              <input
+                type="text"
+                name="msg"
+                placeholder="Message"
+                required
+                class="email-field"
+              />
+
+              <button
+                type="submit"
+                class="btn btn-secondary has-before has-after"
+              >
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">About Apeiron</p>
+
+            <p class="footer-text">
+              At Apeiron we specialize in designing, building, scaling and
+              deploying beautiful, usable websites with blazing-fast efficiency.
+            </p>
+
+            <ul class="social-list">
+              <!-- <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li> -->
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <!-- <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-skype"></ion-icon>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="#newsletter" class="footer-link">Contact us</a>
+            </li>
+
+            <li>
+              <a href="#service" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#project" class="footer-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#feature" class="footer-link">Features</a>
+            </li>
+
+            <!-- <li>
+              <a href="#" class="footer-link">Terms & Services</a>
+            </li> -->
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Facebook posts</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-facebook"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-facebook"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-facebook"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-facebook"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-facebook"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-facebook"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2022 Apeiron. All Rights Reserved by apeiron
+          </p>
+
+          <!-- <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Terms and conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Login / Signup</a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@latest/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@latest/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- 
+    - custom js link
+  -->
+    <!-- <script type="module" src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

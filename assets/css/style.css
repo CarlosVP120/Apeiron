@@ -1180,7 +1180,7 @@ span {
     max-width: 540px;
     width: 100%;
     margin-inline: auto;
-    max-height: 100vh;
+    /* max-height: 100vh; */
   }
 
   /**

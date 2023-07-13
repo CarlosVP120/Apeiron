@@ -1212,20 +1212,10 @@
       defer
     ></script> -->
     <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-    <script>
-      window.botpressWebChat.init({
-        composerPlaceholder: 'Di "Hola" a Neximo!',
-        botConversationDescription: "Servicio a Clientes",
-        botId: "9069cb7f-354c-42c4-a9fd-e859ab615feb",
-        hostUrl: "https://cdn.botpress.cloud/webchat/v0",
-        messagingUrl: "https://messaging.botpress.cloud",
-        clientId: "9069cb7f-354c-42c4-a9fd-e859ab615feb",
-        botName: "Lisa: de NEXIMO",
-        stylesheet:
-          "https://aws-webdemo-bucket.s3.us-west-2.amazonaws.com/webchat.css",
-        useSessionStorage: true,
-      });
-    </script>
+    <script
+      src="https://mediafiles.botpress.cloud/9069cb7f-354c-42c4-a9fd-e859ab615feb/webchat/config.js"
+      defer
+    ></script>
     <script>
       window.addEventListener("message", function (event) {
         if (event.data.type === "LIFECYCLE.LOADED") {

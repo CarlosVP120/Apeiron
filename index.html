@@ -1216,13 +1216,35 @@
       src="https://mediafiles.botpress.cloud/9069cb7f-354c-42c4-a9fd-e859ab615feb/webchat/config.js"
       defer
     ></script>
-    <script>
+    <!-- <script>
       window.addEventListener("message", function (event) {
         if (event.data.type === "LIFECYCLE.LOADED") {
           window.botpressWebChat.sendEvent({
             type: "text",
             channel: "web",
             payload: { text: "start the bot automatically" },
+          });
+        }
+      });
+    </script> -->
+    <script>
+      window.botpressWebChat.onEvent(
+        function (ev) {
+          window.botpressWebChat.sendEvent({
+            type: "loadConversation",
+          });
+        },
+        ["LIFECYCLE.LOADED"]
+      );
+      window.addEventListener("message", function (event) {
+        // console.log(event.data.type);
+        if (event.data.type == "LIFECYCLE.READY") {
+          window.botpressWebChat.sendEvent({
+            type: "trigger",
+            channel: "web",
+            payload: {
+              text: "",
+            },
           });
         }
       });
